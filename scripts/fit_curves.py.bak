@@ -1,0 +1,22 @@
+# scripts/fit_curves.py
+# super-minimal scaffold you can run from Spyder or terminal
+
+from pathlib import Path
+import pandas as pd
+import numpy as np
+
+RAW_DIR = Path(__file__).resolve().parents[1] / "data" / "raw"
+PROC_DIR = Path(__file__).resolve().parents[1] / "data" / "processed"
+PROC_DIR.mkdir(parents=True, exist_ok=True)
+
+def main():
+    print("Raw data folder:", RAW_DIR)
+    print("Processed folder:", PROC_DIR)
+    # TODO: load your CSV, e.g.:
+    # df = pd.read_csv(RAW_DIR / "your_points.csv")
+    # coeffs = np.polyfit(df["x"], df["y"], deg=2)
+    # pd.DataFrame([coeffs], columns=["a2","a1","a0"]).to_csv(PROC_DIR / "coeffs.csv", index=False)
+    print("Scaffold ready. Add your logic where the TODOs are.")
+
+if __name__ == "__main__":
+    main()
