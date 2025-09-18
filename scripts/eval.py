@@ -23,8 +23,6 @@ ys = p(xs)
 for xv, yv in zip(xs, ys):
     print(f"{xv}, {yv}")
 
-    
-# 
 # run python eval.py 150 200 300.5 | or any number of values - no commas in between
 
 
